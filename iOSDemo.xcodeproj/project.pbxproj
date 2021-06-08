@@ -16,6 +16,7 @@
 		644D8ED0266FAA1900A5457F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D8ECF266FAA1900A5457F /* main.m */; };
 		644D8EDA266FAA1900A5457F /* iOSDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D8ED9266FAA1900A5457F /* iOSDemoTests.m */; };
 		644D8EE5266FAA1900A5457F /* iOSDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D8EE4266FAA1900A5457F /* iOSDemoUITests.m */; };
+		7544369CA04BDE7DA7AD43EC /* Pods_QR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629E0B63C7EA2704E09C64AD /* Pods_QR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5086449830C932F99A10D4FD /* Pods-QR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QR.release.xcconfig"; path = "Target Support Files/Pods-QR/Pods-QR.release.xcconfig"; sourceTree = "<group>"; };
+		629E0B63C7EA2704E09C64AD /* Pods_QR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		644D8EBA266FAA1500A5457F /* QR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		644D8EBD266FAA1500A5457F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		644D8EBE266FAA1500A5457F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		644D8EE0266FAA1900A5457F /* iOSDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		644D8EE4266FAA1900A5457F /* iOSDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSDemoUITests.m; sourceTree = "<group>"; };
 		644D8EE6266FAA1900A5457F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB17153C4D0EA3B98FF1AD7D /* Pods-QR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QR.debug.xcconfig"; path = "Target Support Files/Pods-QR/Pods-QR.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7544369CA04BDE7DA7AD43EC /* Pods_QR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		284BC181CE574EC6183C1194 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB17153C4D0EA3B98FF1AD7D /* Pods-QR.debug.xcconfig */,
+				5086449830C932F99A10D4FD /* Pods-QR.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		439D848E63560AF5F2D82E15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				629E0B63C7EA2704E09C64AD /* Pods_QR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		644D8EB1266FAA1500A5457F = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +111,8 @@
 				644D8ED8266FAA1900A5457F /* iOSDemoTests */,
 				644D8EE3266FAA1900A5457F /* iOSDemoUITests */,
 				644D8EBB266FAA1500A5457F /* Products */,
+				284BC181CE574EC6183C1194 /* Pods */,
+				439D848E63560AF5F2D82E15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 644D8EE9266FAA1900A5457F /* Build configuration list for PBXNativeTarget "QR" */;
 			buildPhases = (
+				4661D3EF037A580A445D27AF /* [CP] Check Pods Manifest.lock */,
 				644D8EB6266FAA1500A5457F /* Sources */,
 				644D8EB7266FAA1500A5457F /* Frameworks */,
 				644D8EB8266FAA1500A5457F /* Resources */,
+				893C9356D1466CFD606CD10C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,6 +287,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4661D3EF037A580A445D27AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		893C9356D1466CFD606CD10C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QR/Pods-QR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QR/Pods-QR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QR/Pods-QR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		644D8EB6266FAA1500A5457F /* Sources */ = {
@@ -438,6 +507,7 @@
 		};
 		644D8EEA266FAA1900A5457F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB17153C4D0EA3B98FF1AD7D /* Pods-QR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,6 +525,7 @@
 		};
 		644D8EEB266FAA1900A5457F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5086449830C932F99A10D4FD /* Pods-QR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
